@@ -1,0 +1,118 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container{
+    background-color: rgb(1, 14, 14);
+    height: 100vh;
+    width: 100vw;
+}
+.navbar{
+    display: flex;
+    justify-content: space-evenly;
+}
+.logo h1{
+    color: cyan;
+    letter-spacing: 0.5px;
+}
+.nav{
+display: flex;
+}
+.nav a{
+    margin: 10px 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+.nav a:hover{
+color: cyan;
+text-shadow: 2px 0px 5px cyan;
+}
+.box{
+    display: flex;
+align-items: center;
+justify-content: center;
+margin-top:100px ;
+}
+.photo{
+    height: 400px;
+    width: 200px;
+    box-shadow:0px 0px 2px 2px rgb(83, 83, 83);
+    /* -webkit-box-shadow:0px 0px 10px black; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.photo img{
+    height:78px;
+    width:77px;
+    border-radius: 100%;
+   margin-top: 10px;
+   margin-bottom: 10px;
+}
+.photo h1{
+    color: cyan;
+    font-size: 15px;
+    padding: 10px;
+}
+.text{
+    height: 400px;
+    width: 600px;
+    box-shadow: 0px 0px 2px 2px rgb(85, 84, 84);
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text h1,h2{
+    color: rgb(255, 230, 0);
+    animation: blink 3s ease-in 1;
+}
+@keyframes blink {
+    0%{
+        color: transparent;
+    }
+    100%{
+        color: cyan;
+    }
+    
+}
+.text p{
+    color: white;
+    font-weight: bold;
+    font-style:italic ;
+    margin-top: 10px;
+}
+.text button{
+    height: 25px;
+    width: 100px;
+    border-radius: 20px;
+    color: black;
+    background-color: cyan;
+    font-weight: bold;
+    border: none;
+    margin-top: 20px;
+}
+.text button:hover{
+animation: slide 3s ease 1;
+background-color: yellow;
+}
+@keyframes slide {
+    0%{
+        background-color: cyan;
+    }
+    100%{
+        background-color: yellow;
+    }
+}
+.photo a{
+    text-decoration: none;
+    color: white;
+    margin: 10px;
+}
+.bx{
+    color: cyan;
+}
